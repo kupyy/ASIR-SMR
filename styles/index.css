@@ -27,3 +27,19 @@ body{
     list-style: none;
     margin: 10px;
 }
+
+.ejercicios{
+    color: aliceblue;
+}
+
+.lista_asir{
+    display: none;
+}
+
+.lista_dam{
+    display: none;
+}
+
+.lista_smr{
+    display: none;
+}
