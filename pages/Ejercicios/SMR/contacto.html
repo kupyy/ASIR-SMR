@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ballon World Cup Contacto</title>
+</head>
+<body>
+	<img src="../imagenes/bwc2.jpeg" alt="Balloon World Cup">
+	<!--Navegación-->
+	<nav>
+		<h2>
+			Navegación
+		</h2>
+		<!--Lista de páginas disponibles para la navegación-->
+		<a href="../../../inicio.html">Vuelta al inicio</a>
+	</nav>
+	<form action="inicio.html" method="get">
+		<ul>
+			<li>
+				<label for="nombre">Nombre:</label>
+				<br>
+				<input type="text" name="nombre" required>
+			</li>
+			<li>
+				<label for="apellidos">Apellidos:</label>
+				<br>
+				<input type="text" name="apellidos" required>
+			</li>
+			<li>
+				<label for="edad">Edad</label>
+				<br>
+				<input type="number" name="edad" min="0" required>
+			</li>
+			<li>
+				<label for="correo">Correo</label>
+				<br>
+				<input type="email" name="correo" required>
+			</li>
+			<li>
+				<label>¿Te ha gustado el evento?</label>
+				<br>
+				<input type="radio" name="gusta?" value="Sí" required>
+				<label for="Sí">Sí</label>
+				<input type="radio" name="gusta?" value="No">
+				<label for="No">No</label>
+			</li>
+			<li>
+				<label>¿Cuál es tu opinión sobre el propio evento?(opcional)</label>
+				<br>
+				<textarea></textarea>
+			</li>
+		</ul>
+		<button type="submit">Enviar</button>
+		<button type="reset">Borrar</button>
+	</form>
+</body>
+</html>
