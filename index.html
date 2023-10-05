@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="José Antonio Collantes Vega">
     <link rel="stylesheet" href="styles/index.css"></link>
-    <link rel="JavaScript" href="scripts/index.js">
+    <script src="scripts/index.js"></script>
     <title>ASIR/SMR</title>
 </head>
 <body>
@@ -14,16 +14,17 @@
     </div>
     <div class="navigation">
         <nav>
-            <ul class="practicas">
-                <li>Prácticas SMR</li>
-                <li>Prácticas ASIR</li>
+            <ul class="practicas" id="listado">
+                <li onclick="switch_style(this)" class="elemento" id="smr_boton">Prácticas SMR</li>
+                <li onclick="switch_style(this)" class="elemento" id="asir_boton">Prácticas ASIR</li>
+                <li onclick="switch_style(this)" class="elemento" id="dam_boton">Prácticas DAM</li>
             </ul>
         </nav>
     </div>
 
     <div class="ejercicios">
         <div class="lista_smr" id="smr">
-            lista asir
+            lista smr
         </div>
         <div class="lista_asir" id="asir">
             lista asir
