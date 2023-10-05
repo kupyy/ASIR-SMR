@@ -16,6 +16,7 @@ body{
     background-color: #1F1F1F;
     padding: 10px;
     margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
 }
@@ -30,17 +31,43 @@ body{
 
 .ejercicios{
     color: aliceblue;
+    display: grid;
+    margin-top: 0;
 }
 
-/*
-.lista_asir{
-    display: auto;
+/*Propiedades de las listas de ejercicios*/
+.lista_smr, .lista_asir, .lista_dam{
+    margin: 10px;
+    margin-top: 0;
+    width: 90%;
+    background-color: #191919;
 }
 
-.lista_dam{
-    display: auto;
-}
-
+/*Listado de ejercicios de SMR*/
 .lista_smr{
-    display: auto;
-}*/
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.lista_smr ul li, .lista_asir ul li, .lista_dam ul li{
+    list-style: none;
+    margin: 10px 0 10px 0;
+}
+
+.lista_smr ul li a{
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*Listado de ejercicios de ASIR*/
+.lista_asir{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*Listado de ejercicios de DAM*/
+.lista_dam{
+    grid-column: 3;
+    grid-row: 1;
+}
