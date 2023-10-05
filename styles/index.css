@@ -32,14 +32,15 @@ body{
     color: aliceblue;
 }
 
+/*
 .lista_asir{
-    display: none;
+    display: auto;
 }
 
 .lista_dam{
-    display: none;
+    display: auto;
 }
 
 .lista_smr{
-    display: none;
-}
+    display: auto;
+}*/
