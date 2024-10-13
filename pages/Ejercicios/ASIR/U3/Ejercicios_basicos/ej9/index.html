@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var v1 = "variable1";
+        var v2 = "variable2";
+        var v3;
+
+        document.write("Antes del cambio:<br>");
+        document.write("Variable 1: " + v1 + "<br>");
+        document.write("variable 2: " + v2 + "<br>");
+
+        /*Intercambio de variables*/
+        v3 = v1;
+        v1 = v2;
+        v2 = v3;
+
+        document.write("<br>")
+        document.write("Despues del cambio:<br>");
+        document.write("Variable 1: " + v1 + "<br>")
+        document.write("Variable 2: " + v2 + "<br>")
+    </script>
+</body>
+</html>

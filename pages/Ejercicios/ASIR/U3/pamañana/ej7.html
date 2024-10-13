@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <script type="text/javascript">
+        var num = parseInt(prompt("Introduce un número: "));
+        var array = new Array();
+        var suma = 0;
+
+
+        for(var i = 0; i<num; i++){
+            array.push(Math.floor(Math.random()*10));
+        }
+
+        for(i in array){
+            suma = suma + array[i];
+        }
+
+        document.write(array);
+        document.write("<br>");
+        document.write(suma);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

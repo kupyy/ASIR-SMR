@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilo.css" type="text/css"?>
+
+<agenda>
+    <contacto>
+        <![CDATA[ Nombre: ]]>
+        <nombre>Fernando</nombre>
+        <![CDATA[ Apellidos: ]]>
+        <apellidos>Alonso Díaz</apellidos>
+        <mail>
+            <![CDATA[ Correo/s: ]]>
+            <dirección>alo14@gmail.com</dirección>
+            <dirección>lonsez@gmail.com</dirección>
+        </mail>
+        <telefonos>
+            <![CDATA[ Nº Telefono:]]>
+            <numero>684333333</numero>
+            <numero>633582146</numero>
+        </telefonos>
+    </contacto>
+    <contacto>
+        <![CDATA[ Nombre:]]>
+        <nombre>Carlos</nombre>
+        <![CDATA[ Apellidos: ]]>
+        <apellidos>Sainz Vázquez de Castro</apellidos>
+        <mail>
+            <![CDATA[ Correo/s: ]]>
+            <dirección>carlosszjr@gmail.com</dirección>
+        </mail>
+        <telefonos>
+            <![CDATA[ Nº Telefono:]]>
+            <numero>852147369</numero>
+        </telefonos>
+    </contacto>
+</agenda>

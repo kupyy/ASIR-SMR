@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function(){
+        state = "red"
+            //Cambiar color de texto
+        document.getElementById("cambiar").addEventListener("click", function(){
+            var parrafos = document.getElementsByTagName("p");
+            //var n;
+            if (state == 1){
+                for(i in parrafos){
+                    parrafos[i].style = "color:red;"
+                }
+                state = 2;
+            }
+            else{
+                for(i in parrafos){
+                    parrafos[i].style = "color:blue;"
+                }
+                state = 1;
+            }
+        });
+           
+        
+        var borrar = document.getElementById("borrar");
+        borrar.parentNode.removeChild(borrar);
+        }
+    </script>
+</head>
+<body>
+    <p>Hola 1</p>
+    <p>Hola 2</p>
+    <p>Hola 3</p>
+    <p id="borrar">Hola 4</p>
+    <p>Hola 5</p>
+
+    <button id="cambiar">cambia el color</button>
+</body>
+</html>

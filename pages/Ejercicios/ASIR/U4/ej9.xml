@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empleados>
+    <empleado id="1968">
+        <id_empleado>1968</id_empleado>
+        <apellido>Burgos</apellido>
+        <nombre>Jerónimo</nombre>
+        <seleccional>Palmira</seleccional>
+        <facultad>Administración</facultad>
+        <cargo>Administrativo</cargo>
+        <salario>$3.200</salario>
+        <fecha_comienzo>05/04/1982</fecha_comienzo>
+    </empleado>
+    <empleado id="1674">
+        <id_empleado>1674</id_empleado>
+        <apellido>Vilegas</apellido>
+        <nombre>Estefania</nombre>
+        <seccional>s</seccional>
+    </empleado>
+</empleados>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <style type="text/css">
+        #target{
+            border: 2px solid black;
+            padding: 1em;
+        }
+    </style>
+    <script type="text/javascript">
+        
+        function showCoordinates(event){
+            var p = document.getElementById("pos");
+            
+            p.innerHTML = "x:" + event.clientX + "y:" + event.clientY;
+            
+        }
+        
+        function clearCoordinates(){
+            var p = document.getElementById("pos");
+            
+            p.innerHTML = "x: y:";
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="target" onmousemove="showCoordinates(event)" onmouseout="clearCoordinates()">
+        <p>Pasa el ratón por aquí para saber sus coordenadas</p>
+        <ul id="">
+            <li>Lista de coordenadas</li>
+        </ul>
+    </div>
+    <p id="pos">x: y:</p>
+</body>
+</html>

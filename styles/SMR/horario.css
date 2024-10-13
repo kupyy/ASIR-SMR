@@ -16,6 +16,7 @@ table{
     background-color: #555555;
     border: #414141 solid 2px;
     width: auto;
+    text-align: center;
 }
 
 #dias{
@@ -33,37 +34,37 @@ table{
     border: #0054a8 solid 2px;
 }
 
-#aso{
+#dint{
     background-color:#778899;
     border: #587999 solid 2px;
 }
 
-#web{
+#adt{
     background-color: #ff6347;
     border: #ff5031 solid 2px;
 }
 
-#empresa{
+#psv{
     background-color: #63b99d;
     border: #2bb688 solid 2px;
 }
 
-#servicios{
+#hlc{
     background-color:#3cb371;
     border: #00863c solid 2px;
 }
 
-#seguridad{
+#pmv{
     background-color: #ff7f50;
     border: #ff672f solid 2px;
 }
 
-#bd{
+#sge{
     background-color: #ff69b4;
     border: #ff48a3 solid 2px;
 }
 
-#libre{
+#eie{
     background-color: #f77ead;
     border: #ed6498 solid 2px;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <script type="text/javascript">
+        function cambiacolor(color,element){
+            element.style.backgroundColor = color;
+        }
+
+        function cambiatexto(element, elevento){
+            var COLOR;
+
+            var evento = window.event || elevento;
+            var letter = String.fromCharCode(evento.charCode);
+            //console.log(letter)
+            var enlaces = document.getElementsByTagName("a");
+
+            switch(letter){
+                case "a":
+                case "A":
+                    COLOR = "aliceblue";
+                    break;
+                case "v":
+                case "V":
+                    COLOR = "lightgreen";
+                    break;
+                default:
+                    COLOR = "white";
+            }
+
+            //console.log(COLOR);
+
+            element.style.backgroundColor=COLOR;
+            
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p onmouseover="cambiacolor('red', this)" onmouseout="cambiacolor('white', this)">Esto es una prueba de algo y <a href="https://www.google.es" onkeypress="cambiatexto(this)">un enlace</a></p>
+        <p onmousedown="cambiacolor('green', this)" onmouseup="cambiacolor('white', this)">Esto es otro contenido</p>
+    </div>
+</body>
+</html>

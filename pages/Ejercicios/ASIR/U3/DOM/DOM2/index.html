@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Document</title>
+    <style type="text/css">
+        .boton{
+            color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function(){
+            var i = 0;
+            return i;
+        }
+        function add_element(){
+            var elemento_li = document.createElement("li");
+            var texto = document.createTextNode("Nuevo elemento");
+            elemento_li.appendChild(texto);
+            document.getElementById("A").appendChild(elemento_li);
+        }
+
+        function count(i){
+            //var i = 0
+            i++;
+            var boton = document.getElementsByClassName("boton");
+
+            boton.innerHTML = i;
+            console.log(i)
+        }
+        </script>
+</head>
+<body>
+    <button onclick="add_element(), count()" class="boton">1</button>
+    <ul id="A">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+</body>
+</html>

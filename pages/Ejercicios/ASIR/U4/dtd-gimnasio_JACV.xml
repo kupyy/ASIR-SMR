@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gimnasio [
+    <!ELEMENT gimnasio (persona)*>
+    <!ELEMENT persona (Nombre_y_Apellidos, Telefono*, Email+, Socio)>
+    <!ATTLIST persona genero CDATA #REQUIRED>
+    <!ATTLIST persona id ID #REQUIRED>
+
+    <!ELEMENT Nombre_y_Apellidos (#PCDATA)>
+    <!ELEMENT Apellidos (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Socio (#PCDATA)>
+]>
+
+<gimnasio>
+    <persona genero="femenino" id="a001">
+        <Nombre_y_Apellidos>Segundo Pascual</Nombre_y_Apellidos>
+        <Telefono>6xxxxxxxxx</Telefono>
+        <Telefono>95xxxxxxx</Telefono>
+        <Email>user1@gmail.com</Email>
+        <Email>user2@gmail.com</Email>
+        <Email>user3@gmail.com</Email>
+        <Socio>si</Socio>
+    </persona>
+    <persona genero="masculino" id="a002">
+        <Nombre_y_Apellidos>Obdulia Toledo</Nombre_y_Apellidos>
+        <Email>carmen@uma.es</Email>
+        <Socio>no</Socio>
+    </persona>
+</gimnasio>

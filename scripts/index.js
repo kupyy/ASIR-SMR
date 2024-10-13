@@ -9,9 +9,6 @@ function switch_style(elemento){
         case "asir_boton":
             objetivo = document.getElementById("asir");
             break;
-        case "dam_boton":
-            objetivo = document.getElementById("dam");
-            break;
     }
 
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Document</title>
+    <script type="text/javascript">
+        function cambiacolor(color){
+            var n_parrafos = document.getElementsByTagName("p");//obtiene todos los parrafos
+            var n_parrafo = prompt("Introduce el nº del parrafo");//obtiene el numero del parrafo a cambiar
+            parrafo = n_parrafos[n_parrafo-1];//adaptacion del numero del parrafo
+
+            //control del color a cambiar
+            switch(color){
+                case 'amarillo':
+                    parrafo.style.backgroundColor = "yellow";
+                    break;
+                case 'rojo':
+                    parrafo.style.backgroundColor = "red";
+                    break;
+                case 'verde':
+                    parrafo.style.backgroundColor = "green";
+                    break;
+            }
+        }
+
+        function reset_color(){
+            var parrafos = document.getElementsByTagName("p");//obtiene todos los parrafos
+
+            for(n in parrafos){
+                parrafos[n].style.backgroundColor = "white";//cambia los parrafos a color blanco
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p>Hola Mundo</p>
+    <p>Puedo cambiar de color</p>
+    <p>Solo dime un color</p>
+    <p>Y lo haré</p>
+    <p>Gracias :P</p>
+
+    <!--Botones-->
+    <button onclick="cambiacolor('amarillo')">Amarillo</button>
+    <button onclick="cambiacolor('rojo')" >Rojo</button>
+    <button onclick="cambiacolor('verde')">Verde</button>
+    <button onclick="reset_color()">Reset</button>
+</body>
+</html>
