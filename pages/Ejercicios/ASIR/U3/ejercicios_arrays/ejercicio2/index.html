@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <script type="text/javascript">
+        var string = prompt("Introduzca cualquier cosa");
+        var char = prompt("Introduzca una letra");
+        var cont = 0;
+
+        var x = string.split("");/*Separar las letras en un array llamado x*/
+
+        /*Por cada vez que la letra almacenada en char aparezca en el string
+        se agrega un valor más a la variable cont, responsable del recuento de
+        caracteres*/
+        for (i in x){
+            if (char == x[i]){
+                cont++;
+            }
+        }
+
+        /*Resultado*/
+        if (cont == 0){
+            document.write("La letra \"" + char + "\" no aparece en la frase introducida");
+        }
+        else if (cont == 1){
+            document.write("La letra \"" + char + "\" aparece " + cont + " vez");
+        }
+        else{
+        document.write("La letra \"" + char + "\" aparece " + cont + " veces");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

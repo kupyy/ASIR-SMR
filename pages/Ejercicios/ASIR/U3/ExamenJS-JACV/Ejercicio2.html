@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Examen js - Ej2</title>
+    <script type="text/javascript">
+        /*Declaración de variables*/
+        var palabras = parseInt(prompt("Introduce un número de palabras:"));
+        var array_pal = new Array();
+        var vocal = new Array();
+        var n = 0;
+        var op;
+        var voc;
+
+        /*Insercion de palabras*/
+        for (var i = 0; i < palabras; i++){
+            array_pal.push(prompt("Introduce una pablabra:"));
+        }
+
+        /*Contador de vocales*/
+        for (i in array_pal){
+            op = array_pal[i];
+            voc = op.split("");
+            n = 0; /*Reseteo de la variable n, para contar las vocales desde 0(si no se hace, en las palabras se incluyen las vocals de las palabras anteriores)*/
+            for(i in voc){
+                if (voc[i] == "a" || voc[i] == "e" || voc[i] == "i" || voc[i] == "o" || voc[i] == "u"){
+                    n++;
+                }
+            }
+            vocal.push(n);
+        }
+
+        /*Impresión de resultado*/
+        document.write("Las palabras insertadas son:<br>");
+        for(i = 0; i < palabras; i++){
+            document.write(array_pal[i] + " - " + vocal[i] + " vocales.<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

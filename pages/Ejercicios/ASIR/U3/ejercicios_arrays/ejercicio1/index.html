@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*Declaración de variables*/
+        var str1 = prompt("Introduce cualquier cosa:");
+        var str2 = prompt("Introduce una cadena peuqueña:")
+        var subs = str2.length;
+
+        /*Comparación del substring con el string original*/
+        if (str1.substring(0,subs) == str2){
+            document.write("La cadena \"" + str1 + "\" comienza por \"" + str2 + "\"");
+        }
+        else{
+            document.write("La cadena \"" + str1 + "\" no comienza por \"" + str2 + "\"");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilo.css" type="text/css"?>
+
+<bandeja_entrada>
+    <correo>
+        <remitente>Mike Krack</remitente>
+        <destinatario>Fernando Alonso</destinatario>
+        <asunto>Nueva ilegalidad</asunto>
+        <cuerpo>En monaco llega la 33 lonsez</cuerpo>
+    </correo>
+    <correo>
+        <remitente>Toto Wolff</remitente>
+        <destinatario>Michael Masi</destinatario>
+        <asunto>POR FAVOR</asunto>
+        <cuerpo>NO MICKEY THAT WAS SO NOT RIGHT</cuerpo>
+    </correo>
+</bandeja_entrada>

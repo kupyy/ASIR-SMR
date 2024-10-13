@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Document</title>
+    <script type="text/javascript">
+        var n = 0;
+        var x = parseInt(prompt("Introduce un número:"));
+
+        if(isNaN(x)){
+            document.write("El tipo de dato no es correcto");
+        }
+        else if(x <= 1){
+            document.write("El número introducido debe ser mayor que 1");
+        }
+        else{
+            while (n < x){
+                n++;
+
+                if(n == x){
+                    document.write(n);
+                }
+                else{
+                    document.write(n + ", ");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="cambia" src="media/mira.jpeg" onclick="changeimg">
+        <button id="button">Dale mostro</button>
+    </div>
+
+
+    <script>
+        var imagen = document.getElementById('cambia');
+        var estado = 1;
+
+        imagen.addEventListener("click", function changeimg(){
+            if (estado === 1){
+                imagen.src = "media/grita.jpeg";
+                estado = 2;
+            }
+            else{
+                imagen.src = "media/mira.jpeg";
+                estado = 1;
+            }
+        });
+    </script>
+</body>
+</html>

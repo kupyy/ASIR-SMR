@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*Declaración de variables y arrays*/
+        var notas = new Array();
+        var nombres = new Array();
+        var nota_txt = new Array();
+
+        /*Introducción de notas y nombre, en caso de que la nota introducida no sea válida terminará el proceso*/
+        for(var i = 0; i < 10; i++){
+            let num = parseFloat(prompt("Introduce la nota:"));
+            if (num <= 10.00 && num > 0.00){
+                notas.push(num);
+            }
+            else{
+                document.write("La nota introducida no es válida");
+                break;
+            }
+            let nom = prompt("Introduce el nombre del alumno nombre:");
+            nombres.push(nom);
+
+            /*Impresion de los resultados introducidos, compara la nota introducida con una plantilla de notas y las guarda como nota textual*/
+            if (notas[i] <= 4.99){
+                nota_txt.push("Suspenso");
+                document.write("La nota de " + nombres[i] + " es " + notas[i] + ", es un " + nota_txt[i] + ".<br>");
+            }
+            else if (notas[i] >= 5 && notas[i] <= 6.99){
+                nota_txt.push("Bien");
+                document.write("La nota de " + nombres[i] + " es " + notas[i] + ", es un " + nota_txt[i] + ".<br>");
+            }
+            else if (notas[i] >= 7 && notas[i] <= 8.99){
+                nota_txt.push("Notable");
+                document.write("La nota de " + nombres[i] + " es " + notas[i] + ", es un " + nota_txt[i] + ".<br>");
+            }
+            else{
+                nota_txt.push("Sobresaliente");
+                document.write("La nota de " + nombres[i] + " es " + notas[i] + ", es un " + nota_txt[i] + ".<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

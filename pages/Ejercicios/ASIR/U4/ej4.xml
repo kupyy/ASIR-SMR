@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+    <title>Xataka</title>
+        <link>https://www.xataka.com</link>
+        <description>Publicación de noticias sobre gadgets y tecnología. Últimas tecnologías en electrónica de consumo y novedades tecnológicas en móviles, tablets, informática, etc</description>
+        <pubDate>Fri, 05 May 2023 10:15:07 +0000</pubDate>
+        <generator>https://www.xataka.com</generator>
+        <atom:link href="https://www.xataka.com/feedburner.xml" rel="self" type="application/rss+xml"/>
+    </channel>
+</rss>

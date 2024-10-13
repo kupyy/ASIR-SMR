@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <script type="text/javascript">
+        function procesar(){
+            //Color
+            var color = document.getElementById("color_in").value;
+
+            document.body.style.backgroundColor = color;
+            
+            //Nombre
+            var nombre = document.getElementById("nombre_in").value;
+            var textnode = "Hola, " + nombre;
+
+            document.getElementById("saludo").innerHTML = textnode;
+        }
+
+        function estado(){
+            var elemento = document.getElementById("nombre_in")
+            var boton = document.getElementById("color_sw");
+
+            if (elemento.disabled == false){
+                elemento.disabled = true;
+                boton.innerHTML = "Habilitar";
+            }
+            else{
+                elemento.disabled = false;
+                boton.innerHTML = "Deshabilitar";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <label id="nombre">Nombre:</label><input type="text" value="" id="nombre_in">
+        <label id="color">Color:</label><input type="color" value="" id="color_in" >
+
+        <br>
+
+        <button onclick="procesar()">Enviar</button>
+        <button id="color_sw" onclick="estado()">Deshabilitar</button>
+    </div>
+    <div id="saludo"></div>
+</body>
+</html>

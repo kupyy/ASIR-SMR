@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Antonio Collantes Vega">
+    <title>Examen js - Ej1</title>
+    <script type="text/javascript">
+        /*Declaración de variables*/
+        var nombre = prompt("Dime tu nombre:");
+        var answer = prompt("¿Tienes coche?")
+        var matr;
+        var itv;
+
+        /*Si no tiene coche, termina
+        Si tiene coche, pregunta fecha de matriculacion
+        y da información sobre la ITV*/
+        if (answer == "Si" || answer == "si"){
+            matr = parseInt(prompt("¿Cuál es tu fecha de matriculación?"));
+
+            if(matr >= 2020 ){
+                document.write(nombre + ", este año estás exento de pasar la ITV, la tienes que pasar en " + (matr+3));
+            }
+            else if( matr < 2020 && matr > 2013){
+                document.write(nombre + ", tienes que pasar la ITV este año y su renovación es bianual");
+            }
+            else{
+                document.write(nombre + ", tienes que pasar la ITV este año y su renovación es anual");
+            }
+        }
+        else{
+            document.write("Hasta luego " + nombre);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

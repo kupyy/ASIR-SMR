@@ -1,0 +1,22 @@
+contacto, nombre, apellidos, dirección, numero{
+    display: block;
+    margin: .2em;
+    padding: .2em;
+}
+
+contacto{
+    width: 25%;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+nombre{
+    color: crimson;
+    font-weight: bold;
+}
+
+apellidos, dirección, numero{
+    color: tomato;
+}
+
+

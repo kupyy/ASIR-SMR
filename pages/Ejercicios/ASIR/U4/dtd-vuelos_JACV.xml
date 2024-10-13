@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE vuelos[
+    <!ELEMENT vuelos (vuelo)+>
+    <!ELEMENT vuelo (codigo, diario?, origen, destino, hora-salida, hora-llegada, estado)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ATTLIST codigo codigo ID #REQUIRED>
+    <!ELEMENT diario EMPTY>
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT hora-salida (#PCDATA)>
+    <!ELEMENT hora-llegada (#PCDATA)>
+    <!ELEMENT estado (#PCDATA)>
+    <!ATTLIST estado estado CDATA "E">
+]>
+
+
+
+<vuelos>
+    <vuelo>
+        <codigo codigo="L43"></codigo>
+        <diario />
+        <origen>Málaga</origen>
+        <destino>Madrid</destino>
+        <hora-salida>12:30</hora-salida>
+        <hora-llegada>14:00</hora-llegada>
+        <estado estado="E"></estado>
+    </vuelo>
+    <vuelo>
+        <codigo codigo="L24"></codigo>
+        <origen>Málaga</origen>
+        <destino>Paris</destino>
+        <hora-salida>13:50</hora-salida>
+        <hora-llegada>16:30</hora-llegada>
+        <estado estado="R"></estado>
+    </vuelo>
+</vuelos>
